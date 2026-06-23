@@ -58,7 +58,7 @@ Argo CD is **not GitOps itself**, but an implementation that helps organizations
 
 ---
 
-## Why GitOps Was Needed
+## ⭐⭐⭐⭐⭐Why GitOps Was Needed
 
 ### The World Before GitOps
 
@@ -81,7 +81,7 @@ Kubernetes manifests, Helm charts, or configuration management scripts were freq
 
 ---
 
-### Challenges Without a Unified Model
+### ⭐⭐⭐⭐⭐Challenges Without a Unified Model
 
 Before GitOps as defined by the CNCF, application delivery and operations suffered from fragmented workflows and inconsistent enforcement. While Git was often used for source code, **runtime state was not continuously governed**, leading to systemic operational issues.
 
@@ -117,7 +117,7 @@ Before GitOps as defined by the CNCF, application delivery and operations suffer
 
 ---
 
-## What Is GitOps
+## ⭐⭐⭐⭐⭐What Is GitOps
 
 ![Alt text](/images/1b.png)
 
@@ -144,7 +144,7 @@ The OpenGitOps specification clarifies:
 ---
 
 
-## Benefits of GitOps
+## ⭐⭐⭐⭐⭐Benefits of GitOps
 
 GitOps directly addresses the operational challenges that existed before a unified operating model.
 
@@ -187,7 +187,7 @@ GitOps directly addresses the operational challenges that existed before a unifi
 
 ---
 
-## How GitOps Fits Into Real-World Delivery
+## ⭐⭐⭐⭐⭐How GitOps Fits Into Real-World Delivery
 
 GitOps defines a **single, consistent operating model** for managing applications and infrastructure using Git as the control plane.
 
@@ -445,7 +445,7 @@ In practice:
 * **Other platforms** can use Git-driven workflows, but they do not always achieve the same level of continuous enforcement.
 
 
-**Key GitOps Takeaway**
+⭐⭐⭐⭐⭐**Key GitOps Takeaway**
 
 > GitOps is not just “deploying from Git”.
 > Application pipelines **publish artifacts**, configuration repositories **declare desired state**, and controllers **pull from Git to continuously reconcile and enforce what is running**.
