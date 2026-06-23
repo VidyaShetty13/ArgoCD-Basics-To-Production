@@ -86,7 +86,7 @@ These principles imply the need for a **long-running controller** that can obser
 
 ---
 
-## What Is Argo CD?
+## ⭐⭐⭐⭐⭐What Is Argo CD?
 
 ![Alt text](/images/2a.png)
 
@@ -107,7 +107,7 @@ Argo CD follows a **pull-based deployment model**, where it pulls desired state 
 **Security:**
 Because Argo CD runs inside the cluster, **CI systems do not require direct cluster credentials**. Access to production environments is governed through Git permissions, reviews, and approvals, significantly reducing blast radius and credential exposure.
 
-**Scope:**
+⭐⭐⭐⭐⭐**Scope:**
 Argo CD enforces state **only for applications explicitly configured under its management**. Other workloads may exist in the same cluster without being governed by Argo CD, allowing selective and gradual GitOps adoption.
 
 **Behavior:**
@@ -189,7 +189,7 @@ It enforces state **only for applications explicitly configured under its manage
 
 ---
 
-## Argo CD Architecture
+## ⭐⭐⭐⭐⭐Argo CD Architecture
 
 ![Alt text](/images/2b.png)
 
@@ -270,12 +270,12 @@ These components are not involved directly in reconciliation logic but are essen
 > Argo CD polls Git and watches Kubernetes to keep its cache fresh.
 > Reconciliation compares **cached desired state with cached live state**, while Git and Kubernetes remain the authoritative sources.
 
-**2. argocd-applicationset-controller**
+⭐⭐⭐⭐⭐**2. argocd-applicationset-controller**
 
 * Reconciles the **ApplicationSet** resource, enabling dynamic generation of multiple Application objects.
 * Commonly used for large-scale, multi-cluster deployments driven by Git-based generators.
 
-**3. argocd-dex-server**
+⭐⭐⭐⭐⭐**3. argocd-dex-server**
 
 * Integrates Argo CD with **external identity providers** using OIDC or SAML.
 * Keeps authentication concerns separate from core reconciliation and authorization logic.
