@@ -289,7 +289,7 @@ The **most important CRD** we will work with in this course is the **Application
 
 ---
 
-## The Application CRD and Why It Matters
+## ⭐⭐⭐⭐⭐The Application CRD and Why It Matters
 
 The **Application CRD** represents a **deployed application instance** as understood by Argo CD. It is the Kubernetes resource through which Argo CD models, tracks, and reconciles an application in a given environment.
 
@@ -328,7 +328,7 @@ In the next section, we will **create our first Application resource** and obser
 
 ---
 
-## Sample Application Manifest
+## ⭐⭐⭐⭐⭐Sample Application Manifest
 
 Reference: https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/#applications
 
@@ -359,7 +359,7 @@ This manifest is enough to let Argo CD:
 
 ---
 
-## Application Resource: Field-by-Field Breakdown
+## ⭐⭐⭐⭐⭐Application Resource: Field-by-Field Breakdown
 
 **apiVersion and kind**
 Identify this object as an Argo CD–defined resource, created from the Application CRD.
@@ -435,7 +435,7 @@ The attached diagram visualizes the **three most common patterns** you will enco
 
 ---
 
-### Microservices Architecture
+### ⭐⭐⭐⭐⭐Microservices Architecture
 
 ![Alt text](/images/3c.png)
 
@@ -458,7 +458,7 @@ This is the **most common and recommended pattern** in modern GitOps-driven plat
 
 ---
 
-### Multi-Tier Architecture
+### ⭐⭐⭐⭐⭐Multi-Tier Architecture
 
 ![Alt text](/images/3d.png)
 
@@ -489,7 +489,7 @@ This pattern is common in **transitional architectures** and systems that are be
 
 ---
 
-### Monolithic Architecture
+### ⭐⭐⭐⭐⭐Monolithic Architecture
 
 In a **monolithic architecture**, the entire application is typically deployed as a single unit.
 
@@ -521,7 +521,7 @@ But it must always represent **something you want to deploy, roll back, and reco
 
 ---
 
-### Repository Strategy and Best Practices
+### ⭐⭐⭐⭐⭐Repository Strategy and Best Practices
 
 Although Argo CD allows multiple applications to live in a **single repository using different paths**, modern teams rarely do this in practice.
 
@@ -677,7 +677,7 @@ NAME        SYNC STATUS   HEALTH STATUS
 guestbook   OutOfSync     Missing
 ```
 
-**Why OutOfSync and Missing?**
+⭐⭐⭐⭐⭐**Why OutOfSync and Missing?**
 
 * Desired state exists in Git
 * Live state does not yet exist in the cluster
@@ -772,7 +772,7 @@ You should now see the **Guestbook application running**.
 
 ---
 
-### Key Argo CD Status Concepts
+### ⭐⭐⭐⭐⭐Key Argo CD Status Concepts
 
 **Sync Status**
 Indicates whether **live state matches desired state in Git**.
