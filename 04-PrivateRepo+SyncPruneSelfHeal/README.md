@@ -724,7 +724,7 @@ Each feature is introduced incrementally using the **same application**, so the 
 
 ---
 
-# Automated Sync
+# ⭐⭐⭐⭐⭐Automated Sync
 
 **Purpose:** Automatically apply approved Git changes to the cluster without requiring manual synchronization.
 
@@ -822,7 +822,7 @@ You should now see **2 running replicas**, matching the desired state defined in
 
 ---
 
-# Pruning
+# ⭐⭐⭐⭐⭐Pruning
 
 **Purpose:** Automatically delete Kubernetes resources removed intentionally from Git.
 
@@ -943,7 +943,7 @@ One key observation is the role of **Refresh** versus **Sync** in Argo CD:
 
 In our case, Refresh correctly showed the application as **OutOfSync**, which confirmed that Argo CD had detected the difference between Git and the cluster.
 
-### Why Pruning Did Not Happen Immediately
+### ⭐⭐⭐⭐⭐Why Pruning Did Not Happen Immediately
 
 We observed that pruning did not occur even though:
 
@@ -974,7 +974,7 @@ In the subsequent push, we changed the replica count from **2 to 3** and committ
 
 This confirmed that pruning works as expected **once it is already enabled before the sync begins**.
 
-### Takeaway
+### ⭐⭐⭐⭐⭐Takeaway
 
 > Pruning is evaluated only at the **start of a sync**, not during Refresh and not dynamically during an ongoing sync.
 
@@ -987,7 +987,7 @@ Understanding this nuance helps avoid confusion during demos and prevents surpri
 
 ---
 
-# Self-healing
+# ⭐⭐⭐⭐⭐Self-healing
 
 **Purpose:** Automatically revert manual cluster changes to match Git-defined desired state.
 
@@ -1039,7 +1039,7 @@ spec:
       selfHeal: true
 ```
 
-⚠️ **Important:**
+⚠️ ⭐⭐⭐⭐⭐**Important:**
 Do not stop at `kubectl apply`.
 
 Because the Application CRD is already under **automated sync**, you must also **commit this change to Git**.
@@ -1090,7 +1090,7 @@ kubectl get pods -n app1-ns
 
 ---
 
-### Key takeaway
+### ⭐⭐⭐⭐⭐Key takeaway
 
 > If you change Argo CD behavior but do not commit it to Git, Argo CD will undo your change.
 
