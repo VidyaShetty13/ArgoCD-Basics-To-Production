@@ -1119,6 +1119,18 @@ This configuration results in:
 * Automatic deletion of removed resources
 * Automatic correction of manual drift
 
+If the `application resource` itself is deleted manually from the cluster then "ArgoCD will not monitor anything" irrespective of self healing enabled
+<img width="1064" height="1156" alt="image" src="https://github.com/user-attachments/assets/038d9d44-ffc8-401e-b7fc-511bbb5c224d" />
+<img width="1478" height="754" alt="image" src="https://github.com/user-attachments/assets/74929fee-6b6f-4e4d-972e-50b49b145014" />
+<img width="1606" height="1022" alt="image" src="https://github.com/user-attachments/assets/48fab71c-f692-4543-a733-55de5a59de50" />
+<img width="1154" height="1104" alt="image" src="https://github.com/user-attachments/assets/3fd34cfa-3f92-49ff-880d-f539c696e290" />
+
+how to recover an app if the Application CRD was deleted
+<img width="1510" height="370" alt="image" src="https://github.com/user-attachments/assets/2d234ca7-f240-43b5-b8ee-8dfeb3a576d9" />
+
+how to enforce “Application cannot be deleted” policies
+- To ensure ArgoCD Application objects cannot be deleted, I enforce this at multiple layers. First, I use Kubernetes RBAC to restrict the delete verb on the applications.argoproj.io resource so only platform administrators have that permission, while developers get read‑only access. For stronger governance, I also apply an admission policy using Kyverno or OPA Gatekeeper that explicitly denies any DELETE operation on Application resources, which prevents accidental or intentional removal even by privileged users. This combination of RBAC,and  policy enforcement provides a robust, enterprise‑grade safeguard against Application deletion and keeps the GitOps workflow fully consistent.
+
 ---
 
 ## Final Mental Model
